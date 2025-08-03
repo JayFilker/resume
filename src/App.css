@@ -5,7 +5,7 @@
 
 main {
     /*padding: 2rem;*/
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     padding-right: 2rem;
     display: flex;
 
@@ -30,6 +30,7 @@ main {
             height: 70px;
             list-style: none;
             position: relative;
+            top:4px;
             /*display: flex;*/
             /*justify-content: center;*/
             .top-icon{
@@ -53,10 +54,10 @@ main {
         }
     }
     .resume-left .resume-left-item:nth-child(3) {
-        top:241px
+        top:203px
     }
     .resume-left .resume-left-item:nth-child(4) {
-        top:690px
+        top:629px
     }
 
     .resume-right {
@@ -109,13 +110,13 @@ main {
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 section h2 {
     border-bottom: 2px solid #eee;
     padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .experience-item, .project-item {
@@ -154,4 +155,8 @@ section h2 {
     .experience-header {
         flex-direction: column;
     }
+}
+.btn{
+    width: 100px;
+    height: 40px;
 }
