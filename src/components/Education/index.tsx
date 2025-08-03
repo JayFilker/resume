@@ -3,7 +3,7 @@ import { resumeData } from '../../data/resumeData.ts'
 import {GraduationCap} from 'lucide-react'
 
 export function Education() {
-    return (<section className="experience-section">
+    return (<section className="experience-section education-section">
         <h2><GraduationCap size={20}></GraduationCap>&nbsp;教育背景</h2>
                 <div className="experience-header">
                     <h3>学校：{resumeData.education.institution}</h3>

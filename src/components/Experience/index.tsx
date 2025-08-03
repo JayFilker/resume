@@ -12,15 +12,16 @@ export function Experience() {
                         <span className="duration">时间：{job.duration}</span>
                     </div>
                     <span className="company">技术栈：{job.mainTechnologyStack}</span><br />
+                    <a className="links" href={job.gitHubAddress} target="_blank" rel="noopener noreferrer">
+                        仓库地址:{job.gitHubAddress}
+                    </a><br />
+                    <a className="links"  href={job.gitHubAddress} target="_blank" rel="noopener noreferrer">
+                        挂载地址:{job.mountAddress}
+                    </a>
                     <div className="highlights">
                         介绍：{job.introduce}
                     </div>
-                    <a className="links" href={job.gitHubAddress} target="_blank" rel="noopener noreferrer">
-                       仓库地址:{job.gitHubAddress}
-                    </a><br />
-                    <a className="links"  href={job.gitHubAddress} target="_blank" rel="noopener noreferrer">
-                       挂载地址:{job.mountAddress}
-                    </a>
+
                 </div>
             ))}
         </section>

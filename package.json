@@ -12,6 +12,7 @@
   },
   "homepage": "https://jayfilker.github.io/resume/",
   "dependencies": {
+    "github-markdown-css": "^5.8.1",
     "lucide-react": "^0.535.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",

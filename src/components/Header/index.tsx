@@ -39,7 +39,7 @@ export function Header() {
             </div>
             <div className="header-right">
                 <img src={person} alt=''></img>
-                <img src={person} alt='' className='shaow'></img>
+                {/*<img src={person} alt='' className='shaow'></img>*/}
             </div>
             
         </header>

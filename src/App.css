@@ -5,32 +5,49 @@
 
 main {
     /*padding: 2rem;*/
-    padding-top: 0.5rem;
     padding-right: 2rem;
     display: flex;
 
     .resume-left {
-        width: 6%;
+        width: 8%;
         display: flex;
         flex-direction: column;
         /*justify-content: space-between;*/
         align-items: center;
         position: relative;
+        overflow: hidden;
+        padding-left: 0 !important;
         .line {
             position: absolute;
             top: -2rem;
             height: calc(100% + 2rem);
             width: 1px;
-            background-color: black;
+            background-color: gray;
+            .line-block{
+                width: 20px;
+                height: 20px;
+                /*background-color: white;*/
+                position: absolute;
+                left: -2px;
+                top:28px
+            }
+            .line-block:nth-child(1) {
+                top:24px;
+                left: -21px;
+            }
+        }
 
+        .settings{
+            position: absolute;
+            top:10px
         }
 
         .resume-left-item {
-            width: 100%;
+            width: 70%;
             height: 70px;
             list-style: none;
             position: relative;
-            top:4px;
+            top:41px;
             /*display: flex;*/
             /*justify-content: center;*/
             .top-icon{
@@ -41,6 +58,9 @@ main {
                 transform: rotate(45deg);
                 margin: 0 auto;
                 background-image:url("./assets/starrySky.png") ;
+                border-right:white 1px solid ;
+                border-left:white 1px solid ;
+                z-index: 1;
             }
             .small-icon {
                 width: 30%;
@@ -48,20 +68,22 @@ main {
                 display: block;
                 background-color: #f0f0f0;
                 transform: rotate(45deg);
-                margin: 8px auto 0;
                 background-image:url("./assets/starrySky.png") ;
+                border-right: white 1px solid ;
+                border-left: white 1px solid ;
+                margin: 12px auto 0;
             }
         }
     }
     .resume-left .resume-left-item:nth-child(3) {
-        top:203px
+        top:396px
     }
     .resume-left .resume-left-item:nth-child(4) {
-        top:629px
+        top:898px
     }
 
     .resume-right {
-        width: 94%;
+        width: 92%;
     }
 }
 
@@ -80,6 +102,10 @@ main {
 
 .resume-header {
     /*margin-bottom: 2rem;*/
+}
+
+.experience-section {
+    padding-top: 1rem;
 }
 
 .name-title h1 {
@@ -119,8 +145,11 @@ section h2 {
     /*margin-bottom: 1rem;*/
 }
 
-.experience-item, .project-item {
+.project-item {
     margin-bottom: 1.5rem;
+}
+.experience-item{
+    margin-top: 0.5rem;
 }
 
 .experience-header {
